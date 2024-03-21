@@ -132,7 +132,7 @@ export const createClientTable = (obj) => {
             const datePointBtn = clientCreated.querySelectorAll('.client__created-date');
             [].forEach.call(datePointBtn, (displayBtn) => {
                 console.log()
-                if(clients.length > 0 && Array.from(datePointBtn).indexOf(displayBtn)) {
+                if(clients.length && Array.from(datePointBtn).indexOf(displayBtn) >= 0) {
                     clients.find((item) => {
                     if (obj.id === item.id) {
                         if(item.dates[Array.from(datePointBtn).indexOf(displayBtn)] === true) {
