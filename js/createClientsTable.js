@@ -132,13 +132,16 @@ export const createClientTable = (obj) => {
             const datePointBtn = clientCreated.querySelectorAll('.client__created-date');
             [].forEach.call(datePointBtn, (displayBtn) => {
                 console.log()
-                clients.find((item) => {
+                if(clients) {
+                    clients.find((item) => {
                     if (obj.id === item.id) {
                         if(item.dates[Array.from(datePointBtn).indexOf(displayBtn)] === true) {
                             displayBtn.classList.add('active');
                         }
                     }
-                });
+                    });
+                }
+
                 displayBtn.addEventListener('click', (e) => {
                     const point = Array.from(datePointBtn).indexOf(e.target)
                     console.log(point)
