@@ -1,0 +1,164 @@
+@media (max-width: 1260px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    .clients {
+        padding-top: 130px;
+    }
+
+    .clients__title {
+        margin-bottom: 10px;
+    }
+
+    .display__item--fullname,
+    .client__fullname {
+        width: 25%;
+    }
+    .display__item--created,
+    .client__created {
+        width: 16.7%;
+    }
+    .display__item--changed,
+    .client__changed {
+        width: 15.4%;
+    }
+
+    .display__btn--changed,
+    .display__btn--created {
+        max-width: 100px;
+    }
+
+    .display__item--contacts {
+        width: 16%;
+    }
+
+    .display__item--actions,
+    .client__actions {
+        width: 20%;
+    }
+
+    .client__item {
+        padding: 18px 20px;
+    }
+
+    .client__created-date, .client__changed-date {
+        margin-right: 10px;
+    }
+
+    .client__contacts {
+        width: 14%;
+    }
+}
+
+
+@media (max-width: 996px) {
+    .header {
+        padding-top: 19px;
+    }
+    
+    .display__item--id,
+    .client__id {
+        width: 8.5%;
+    }
+
+    .display__item--fullname,
+    .client__fullname {
+        width: 31.5%;
+    }
+
+    .display__item--created,
+    .client__created,
+    .display__item--changed,
+    .client__changed {
+        width: 14.4%;
+    }
+
+    .display__item--contacts,
+    .client__contacts {
+        width: 19%;
+    }
+
+    .display__item--actions,
+    .client__actions {
+        width: 12.2%;
+    }
+
+    .client__item {
+        padding: 6px 20px;
+    }
+
+    .client__created, 
+    .client__changed,
+    .client__actions {
+        flex-wrap: wrap;
+    }
+
+    .client__contacts {
+        padding-right: 22px;
+    }
+
+    .client__actions-icon {
+        margin-right: 0px;
+    }
+
+    .client__actions-btn {
+        letter-spacing: 0.4px;
+    }
+
+    .client__edit {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 8px 0 0 0;
+        height: 40px;
+    }
+
+    .header__container {
+        justify-content: center;
+    }
+
+    .header__form {
+        display: none;
+    }
+
+    .logo,
+    .logo__img {
+        margin-right: 0;
+        height: 24px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .clients {
+        padding-top: 70px;
+    }
+
+    .clients__title {
+        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .clients__table {
+        height: 340px;
+    }
+
+    .clients__content {
+        margin-right: -10px;
+    }
+
+    .add-client-btn {
+        margin-right: 15px;
+    }
+}

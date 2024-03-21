@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <form class="header__form" action="">
+        <input class="header__search" type="text" placeholder="Введите запрос">
+      </form>
+    </div>
+  </header>
+  <main class="main">
+    <section class="clients">
+      <div class="container">
+        <div class="clients__content">
+          <table class="clients__table">
+            <thead class="clients__display display">
+            <tr class="display__container">
+              <th class="display__item display__item--id" scope="col">
+                <button class="display__btn display__btn--id btn-reset display__btn--down" data-type="id">ID
+                </button>
+              </th>
+              <th class="display__item display__item--fullname" scope="col">
+                <button class="display__btn display__btn--fullname btn-reset display__btn--down" data-type="fullname">Фамилия Имя Отчество 
+                  <span class="js-fullname-sort-text"></span>
+                </button>
+              </th>
+              <th class="display__item display__item--task" scope="col">
+                <button class="display__btn display__btn--task btn-reset display__btn--down" data-type="fullname">Задачи
+                  <span class="js-fullname-sort-text"></span>
+                </button>
+              </th>
+              <th class="display__item display__item--created" scope="col">
+                <button class="display__btn display__btn--created btn-reset display__btn--down" data-type="createdAt">Февраль
+                </button>
+                <div class="dates">
+              <div class="date">
+                <p class="date__num">
+                  1
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  2
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  3
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  4
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  5
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  6
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  7
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  8
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  9
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  10
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  11
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  12
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  13
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  14
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  15
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  16
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  17
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  18
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  19
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  20
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  21
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  22
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  23
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  24
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  25
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  26
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  27
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  28
+                </p>
+              </div>
+              <div class="date">
+                <p class="date__num">
+                  29
+                </p>
+              </div>
+            </div>
+              </th>
+              <th class="display__item display__item--actions" scope="col">
+                <button class="display__btn display__btn--actions btn-reset">Действия</button></th>
+            </tr>
+            </thead>
+            
+            <tbody class="clients__list client-table-list">
+            </tbody>
+            <tbody class="clients__list searched-table-list"></tbody>
+          </table>
+          <button class="add-client-btn btn-reset btn-secondary">
+            <svg class="add-client-btn__img">
+              <use xlink:href="./img/svg-icons.svg#add-client"></use>
+            </svg>
+            Добавить
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/searchClient.js"></script>
+</body>
+</html>

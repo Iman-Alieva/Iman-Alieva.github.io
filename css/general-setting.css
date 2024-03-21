@@ -1,0 +1,132 @@
+/* fonts */
+@font-face {
+  font-family: "Open sans";
+  src: 
+  url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: 
+  url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open sans";
+  src: 
+  url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+/* common specification */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  margin: 0;
+  background-color: var(--color-wild-sand);
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1550px;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: var(--smoky-white-color);
+}
+
+.tooltip {
+  z-index: 1000;
+  position: absolute;
+  display: none;
+  bottom: 100%;
+  left: 50%;
+  width: max-content;
+  max-width: 150px;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top: 7px solid var(--black-color);
+}
+
+.tooltip:hover {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  color: var(--white-color);
+  fill: var(--white-color);
+  background-color: var(--glycine-color);
+}
+
+.btn-secondary:active {
+  color: var(--white-color);
+  fill: var(--white-color);
+  background-color: var(--slate-blue);
+}
+
+.btn-primary:hover {
+  background-color: rgba(184, 158, 255, .5);
+}
+
+.btn-primary:active {
+  background-color: var(--slate-blue);
+}
+
+.remove {
+  display: none;
+}
