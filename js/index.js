@@ -9,10 +9,8 @@ const app = async () => {
     });
 
     let clients = [];
-    if(JSON.parse(localStorage.getItem('contacts'))) {
         clients = JSON.parse(localStorage.getItem('contacts'))
         clients.map((item) => document.querySelector('.clients__list').append(createClientTable(item)))
-    }
 
     // if(document.querySelectorAll('.client__item').length === clients.length) {
     //     const datePointBtn = document.querySelectorAll('.client__created');
