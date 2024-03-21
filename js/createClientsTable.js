@@ -139,7 +139,7 @@ export const createClientTable = (obj) => {
                             displayBtn.classList.add('active');
                         }
                     }
-                    });
+                    })
                 }
 
                 displayBtn.addEventListener('click', (e) => {
